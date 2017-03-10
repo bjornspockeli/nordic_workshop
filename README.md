@@ -1,4 +1,4 @@
-Examples and tasks for the Elektra BLE course.
+French Startup Workshop
 -------
 
 ## TODO
@@ -9,19 +9,22 @@ Examples and tasks for the Elektra BLE course.
 - [ ] Add BLE Advanced task (create custom service and characteristic, custom UUID).  
 
 
-### Course Evaluation
+### Workshop Evaluation
 
-Please use the last 5 minutes of the course to fill out the course evaluation in the link below
+Please take the time to fill out the workshop evaluation form in the link below
 
+- [ ] Add Link to Workshop evaluation
+<!---
 [Link to course evaluation](https://docs.google.com/forms/d/e/1FAIpQLScDVuMpX1UtlaiAXDowjTt8rVwuVZcZafOsT5o1SLEj1SeHLg/viewform)
-
-It is important to us that you tell us what you liked about the course and what you did not like about the course so that we can improve the course material and presentations.
+--->
+It is important to us that you tell us what you liked/did not like about the workshop so that we can improve the workshop material and presentations.
 
 The evaluation is of course anonymous. 
 
 ### Presentations
-The presentations from the course can be downloaded using the links below:
+The presentations from the workshop can be downloaded in PDF-format using the links below:
 
+<!---
 [Nordic Introduction and Course Agenda](https://drive.google.com/open?id=0B21ni_IYbeTXaUdDeXZmbi1xeG8)
 
 [nRF52 Introduction and BLE Protocol Basics ](https://drive.google.com/open?id=0B21ni_IYbeTXSTlqUjh2T2RpZjQ)
@@ -29,24 +32,16 @@ The presentations from the course can be downloaded using the links below:
 [nRF52 & PWM](https://drive.google.com/open?id=0B21ni_IYbeTXbkZrdjNBRGpuNzQ)
 
 [BLE Security](https://drive.google.com/open?id=0B21ni_IYbeTXUHlRWUZrbGRWRUE)
-
-### Requests by course participants
-
-For those of you that asked about the Diffie-Hellman key exchange, I recommend that you take a look at the following video that explains the concept.
-
-https://www.youtube.com/watch?v=YEBfamv-_do
-
-For those of you that asked about alternatives to Keil, I recommend taking a look at Segger Embedded Studio
-
-https://devzone.nordicsemi.com/blogs/1032/segger-embedded-studio-a-cross-platform-ide-w-no-c/
-
-and you should also take a look at our Development with Eclipse and GCC tutorial
-
-https://devzone.nordicsemi.com/tutorials/7
+--->
 
 ## Course Software
 
-The tasks in this course requires that you download software, e.g. SKD, IDEs, MDKs and command-line tools. As the favoured option
+The tasks in this course requires that you download software, e.g. SKD, IDEs, MDKs and command-line tools. The nRF5x SDK supports the Keil uVision IDE, IAR and gcc(using makefiles) out-of-the box. 
+
+If you're looking for alternatives to the IDEs mentioned above, then I recommend taking a look at [Segger Embedded Studio](https://devzone.nordicsemi.com/blogs/1032/segger-embedded-studio-a-cross-platform-ide-w-no-c/).
+
+If you would like use gcc toghether with an IDE(e.g. Eclipse), then you should take a look at our [Development with Eclipse and GCC tutorial](https://devzone.nordicsemi.com/tutorials/7).
+
 
 ### Nordic nRF5x Software Development Kit
 

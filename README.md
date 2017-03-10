@@ -31,7 +31,7 @@ The presentations from the workshop can be downloaded in PDF-format using the li
 [BLE Security](https://drive.google.com/open?id=0B21ni_IYbeTXUHlRWUZrbGRWRUE)
 --->
 
-## Course Software
+## Workshop Software
 
 The tasks in this course requires that you download software, e.g. SKD, IDEs, MDKs and command-line tools. The nRF5x SDK supports the Keil uVision IDE, IAR and gcc(using makefiles) out-of-the box. 
 

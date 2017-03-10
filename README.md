@@ -4,10 +4,6 @@ French Startup Workshop
 ## TODO
 
 - [ ] Create Segger Embedded Projects for template_project and ble_app_uart 
-- [ ] Task 1 should be performed as a walkthrough so that course participants get used to Keil/SES
-- [ ] Add SAADC task that shows how to measure VDD.  
-- [ ] Add BLE Advanced task (create custom service and characteristic, custom UUID).  
-
 
 ### Workshop Evaluation
 
@@ -117,6 +113,7 @@ http://www.nordicsemi.com/eng/nordic/download_resource/51505/20/4271639 (Linux64
 
 # Hands-on Tasks 
 
+The hands-on tasks in this workshop will consist of modifying the ble_app_uart example in the nRF5x SDK v12.2.0 so that the LEDs on the nRF52 DK and a servo can be controlled using commands sent from the nRF Toolbox app.
 
 ##Flashing the SoftDevice to the nRF52 DK
 
@@ -281,10 +278,8 @@ nRF Toolbox Menu  | UART Menu     | Edit Button Menu| Configure Command 1 | Edit
 
 10 - Pressing the button we configured to send "COMMAND_1" to the nRF52 DK should turn on LED 4 on the nRF52 DK. Pressing it again should turn it off. Congratulations, you've just controlled one of the GPIO pins of the nRF52 using Bluetooth Low Energy.
 
-##Task 8: Control the Servo using the nRF Toolbox App
-**Scope:** The goal of this task is to include the PWM library in the ble_app_uart example so that we can control the servo from our smartphone instead of using the buttons on the nRF52 DK. 
-
-**Scope:** In this task we will use the PWM library in the nRF5x SDK to control a servo. The PWM library uses one of the nRF52s TIMER peripherals in addition to the PPI and GPIOTE peripherals. The app_pwm library is documented on [this](https://infocenter.nordicsemi.com/topic/com.nordic.infocenter.sdk5.v12.2.0/lib_pwm.html?resultof=%22%61%70%70%5f%70%77%6d%5f%69%6e%69%74%22%20) Infocenter page
+##Task 2: Control the Servo using the nRF Toolbox App
+**Scope:** The goal of this task is to include the PWM library in the ble_app_uart example so that we can control the servo from our smartphone. The app_pwm library is documented on [this](https://infocenter.nordicsemi.com/topic/com.nordic.infocenter.sdk5.v12.2.0/lib_pwm.html?resultof=%22%61%70%70%5f%70%77%6d%5f%69%6e%69%74%22%20) Infocenter page
 
 Connecting the Servo to your nRF52 DK:
 
@@ -397,7 +392,7 @@ Tips:
 
 5 - Compile the project, flash it to the nRF52 DK and control the servo using the nRF Toolbox App.
 
-##Task 9: Measure the die temperature of the nRF52 and send it to the nRF Toolbox app.
+##Task 3: Measure the die temperature of the nRF52 and send it to the nRF Toolbox app.
 **Scope:** 
 
 1 - In order to measure the temperature of the nRF52 die you have to read the registers of the TEMP peripheral of the nRF52, see [this](https://infocenter.nordicsemi.com/topic/com.nordic.infocenter.nrf52832.ps.v1.1/temp.html?cp=2_2_0_26#concept_fcz_vw4_sr) page on the Nordic Infocenter. However, the SoftDevice uses this peripheral to calibrate the 16 MHz clock of the nRF52 so that its accurate enough to be used for BLE. We can therefore not access the TEMP registers directly, we have to go through the SoftDevice and ask it to check what the temperature is. This is done by calling the [sd_temp_get](https://infocenter.nordicsemi.com/topic/com.nordic.infocenter.s132.api.v3.0.0/group___n_r_f___s_o_c___f_u_n_c_t_i_o_n_s.html#gade0ea69f513ff1feab2c4f6e1c393313

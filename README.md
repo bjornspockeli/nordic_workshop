@@ -3,7 +3,7 @@ French Startup Workshop
 
 ## TODO
 
-- [ ] Create Segger Embedded Projects for template_project and ble_app_uart 
+- [ ] Add register definition file (.svd) and retarget of printf to the ble_app_uart Segger Embedded Project.
 
 ### Workshop Evaluation
 

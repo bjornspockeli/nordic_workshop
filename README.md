@@ -72,9 +72,11 @@ http://www.nordicsemi.com/eng/nordic/download_resource/51499/38/44235066
 
 As Keil uVision is only available for Windows, we recommend that you use Segger Embedded Studio instead. 
 
-#### 1. Segger Embedded Studio
+#### 1. Segger Embedded Studio V3.10h
 
 https://www.segger.com/downloads/embeddedstudio
+
+Make sure that you select version V3.10h under older versions.
 
 #### 2. J-Link Software and Documentation Pack
 https://www.segger.com/downloads/jlink#

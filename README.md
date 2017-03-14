@@ -7,7 +7,7 @@ Nordic Workshop
 --->
 ### Workshop Evaluation
 
-Please take the time to fill out the workshop evaluation form in the link below
+Please take the time to fill out the workshop evaluation form in the link below at the end of the workshop.
 
 [Workshop Evaluation Form](https://drive.google.com/open?id=1SZl2SUjyEBT8SB0GR_QiFAIHPugzkKXmD4zKkYVSFoE)
 <!---

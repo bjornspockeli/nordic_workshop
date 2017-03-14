@@ -1,15 +1,15 @@
-French Startup Workshop
+Nordic Workshop
 -------
-
+<!---
 ## TODO
 
 - [ ] Add register definition file (.svd) and retarget of printf to the ble_app_uart Segger Embedded Project.
-
+--->
 ### Workshop Evaluation
 
 Please take the time to fill out the workshop evaluation form in the link below
 
-- [ ] Add Link to Workshop evaluation
+[Workshop Evaluation Form](https://drive.google.com/open?id=1SZl2SUjyEBT8SB0GR_QiFAIHPugzkKXmD4zKkYVSFoE)
 <!---
 [Link to course evaluation](https://docs.google.com/forms/d/e/1FAIpQLScDVuMpX1UtlaiAXDowjTt8rVwuVZcZafOsT5o1SLEj1SeHLg/viewform)
 --->

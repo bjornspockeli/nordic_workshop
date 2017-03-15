@@ -101,7 +101,7 @@ This will return the version of the C compiler if the executable is found in you
 
 To build an example in the SDK you first need to set the toolchain path in makefile.windows or makefile.posix depending on platform you are using. That is, the .posix should be edited if your are working on either Linux or OS X. These files are located in
 
-<SDK>/components/toolchain/gcc
+    <SDK>/components/toolchain/gcc
 
 Open the file in a text editor, and make sure that the GNU_INSTALL_ROOT variable is pointing to your Gnu tools for ARM embedded Processors install directory. 
 
@@ -116,11 +116,11 @@ http://www.nordicsemi.com/eng/nordic/download_resource/51505/20/4271639 (Linux64
 
 The hands-on tasks in this workshop will consist of modifying the ble_app_uart example in the nRF5x SDK v12.2.0 so that the LEDs on the nRF52 DK and a servo can be controlled using commands sent from the nRF Toolbox app.
 
-##Flashing the SoftDevice to the nRF52 DK
+## Flashing the SoftDevice to the nRF52 DK
 
 The following tasks uses the S132 v3.0.0 SoftDevice, which must be flashed to your nRF52 DK. There are two ways to flash the SoftDevice to the nRF52 DK.
 
-###Option 1 - nrfjprog
+### Option 1 - nrfjprog
 
 Navigate to the *\components\softdevice\s132\hex* folder. Click the address line, type in cmd and press enter. This should open a terminal window in the *\components\softdevice\s132\hex* folder.
 
@@ -140,7 +140,7 @@ If you get an error stating that the flash is not erased, then you can erase the
 
 <img src="https://github.com/bjornspockeli/elektra/blob/master/images/nrfjprog.PNG" width="1000"> 
 
-###Option 2 - nRFGO Studio
+### Option 2 - nRFGO Studio
 
 Download nRFGo Studio from the page linked to below
 
@@ -151,7 +151,7 @@ Open nRFGo Studio, select the Segger xxxxxxxxx device in the Device Manager, the
 <img src="https://github.com/bjornspockeli/elektra/blob/master/images/nRFGo_studio.PNG" width="1000"> 
 
 
-##Task 1: Control LEDs using the nRF Toolbox App
+## Task 1: Control LEDs using the nRF Toolbox App
 
 
 **Scope:** Modify the ble_app_uart example to recognise specific commands sent from the nRF Toolbox app and turn on a LED when one of these commands are received.
@@ -279,7 +279,8 @@ nRF Toolbox Menu  | UART Menu     | Edit Button Menu| Configure Command 1 | Edit
 
 10 - Pressing the button we configured to send "COMMAND_1" to the nRF52 DK should turn on LED 4 on the nRF52 DK. Pressing it again should turn it off. Congratulations, you've just controlled one of the GPIO pins of the nRF52 using Bluetooth Low Energy.
 
-##Task 2: Control the Servo using the nRF Toolbox App
+## Task 2: Control the Servo using the nRF Toolbox App
+
 **Scope:** The goal of this task is to include the PWM library in the ble_app_uart example so that we can control the servo from our smartphone. The app_pwm library is documented on [this](https://infocenter.nordicsemi.com/topic/com.nordic.infocenter.sdk5.v12.2.0/lib_pwm.html?resultof=%22%61%70%70%5f%70%77%6d%5f%69%6e%69%74%22%20) Infocenter page
 
 Connecting the Servo to your nRF52 DK:
@@ -299,12 +300,12 @@ Orange: PWM Control Signal 	- Should be connected to one of the unused GPIO pins
 * `nrf_drv_ppi.c`
 * `nrf_drv_timer.c`
 
-###Adding .h files 
+### Adding .h files 
 
 <img src="https://github.com/bjornspockeli/elektra/blob/master/images/include_path.PNG" width="1000"> 
 Click the "Options for target" button in Keil, then select the C/C++ tab and clik on the "..." on the side of the "Inlude Paths" window. Navigate to the components folder and then find the missing .h file in either nrf_drivers or libraries. 
 
-###Adding .c files
+### Adding .c files
  
 <img src="https://github.com/bjornspockeli/elektra/blob/master/images/add_c_files.png" width="1000"> 
 Right-clik the folder that you want to add the .c file to and select "Add existing files to Group '____'". Navigate to the components folder and then find the missing .c file in either nrf_drivers or libraries. 
@@ -312,7 +313,7 @@ Right-clik the folder that you want to add the .c file to and select "Add existi
 
 You also have to make sure that the correct nRF_Drivers and nRF_Libraries are enabled in the sdk_config.h file. If you're having compilation issues and/or linker errors then select the Configuration Wizard Tab in the bottom of the text window after opening `sdk_config.h` in the ble_app_uart example and compare it to the one in the pwm_library example.
 
-###Modifying sdk_config.c  
+### Modifying sdk_config.c  
 
 <img src="https://github.com/bjornspockeli/elektra/blob/master/images/sdk_config.PNG" width="1000">
 
@@ -393,8 +394,8 @@ Tips:
 
 5 - Compile the project, flash it to the nRF52 DK and control the servo using the nRF Toolbox App.
 
-##Task 3: Measure the die temperature of the nRF52 and send it to the nRF Toolbox app.
-**Scope:** 
+## Task 3: Measure the die temperature of the nRF52 and send it to the nRF Toolbox app.
+**Scope:**  Measure the temperature of the nRF52 die and use an application timer to send the measurement to the nRF Toolbox App,
 
 1 - In order to measure the temperature of the nRF52 die you have to read the registers of the TEMP peripheral of the nRF52, see [this](https://infocenter.nordicsemi.com/topic/com.nordic.infocenter.nrf52832.ps.v1.1/temp.html?cp=2_2_0_26#concept_fcz_vw4_sr) page on the Nordic Infocenter. However, the SoftDevice uses this peripheral to calibrate the 16 MHz clock of the nRF52 so that its accurate enough to be used for BLE. We can therefore not access the TEMP registers directly, we have to go through the SoftDevice and ask it to check what the temperature is. This is done by calling the [sd_temp_get](https://infocenter.nordicsemi.com/topic/com.nordic.infocenter.s132.api.v3.0.0/group___n_r_f___s_o_c___f_u_n_c_t_i_o_n_s.html#gade0ea69f513ff1feab2c4f6e1c393313
 ) function. 

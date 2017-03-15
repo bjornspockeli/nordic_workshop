@@ -21,11 +21,10 @@ The evaluation is of course anonymous.
 ### Presentations
 The presentations from the workshop can be downloaded in PDF-format using the links below:
 
+[Nordic Introduction](https://drive.google.com/open?id=0B21ni_IYbeTXQU5kMFZvVGJmNVU)
+
+[nRF52 BLE Training ](https://drive.google.com/open?id=0B21ni_IYbeTXRWQyTGRucGdzUkk)
 <!---
-[Nordic Introduction and Course Agenda](https://drive.google.com/open?id=0B21ni_IYbeTXaUdDeXZmbi1xeG8)
-
-[nRF52 Introduction and BLE Protocol Basics ](https://drive.google.com/open?id=0B21ni_IYbeTXSTlqUjh2T2RpZjQ)
-
 [nRF52 & PWM](https://drive.google.com/open?id=0B21ni_IYbeTXbkZrdjNBRGpuNzQ)
 
 [BLE Security](https://drive.google.com/open?id=0B21ni_IYbeTXUHlRWUZrbGRWRUE)
@@ -33,7 +32,7 @@ The presentations from the workshop can be downloaded in PDF-format using the li
 
 ## Workshop Software
 
-The tasks in this course requires that you download software, e.g. SKD, IDEs, MDKs and command-line tools. The nRF5x SDK supports the Keil uVision IDE, IAR and gcc(using makefiles) out-of-the box. 
+The tasks in this course requires that you download software, e.g. SDK, IDEs, MDKs and command-line tools. The nRF5x SDK supports the Keil uVision IDE, IAR and gcc(using makefiles) out-of-the box. 
 
 If you're looking for alternatives to the IDEs mentioned above, then I recommend taking a look at [Segger Embedded Studio](https://devzone.nordicsemi.com/blogs/1032/segger-embedded-studio-a-cross-platform-ide-w-no-c/).
 
